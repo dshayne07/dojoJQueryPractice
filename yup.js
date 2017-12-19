@@ -21,7 +21,8 @@ $(document).ready(function(){
     $("#content4 .button").click(function(){
         if(!toggle){
             $("#target3").animate({
-                width: "0px"
+                width: "0px",
+                opacity: 0.3
             }, 1000, function(){
                 $("#target3").hide();
                 toggle=true;
@@ -30,7 +31,8 @@ $(document).ready(function(){
         else{
             $("#target3").show();
             $("#target3").animate({
-                width: "347px"
+                width: "347px",
+                opacity: 1
             }, 1000, function(){
                 toggle=false;
             });
